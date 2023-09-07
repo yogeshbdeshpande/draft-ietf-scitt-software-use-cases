@@ -84,7 +84,7 @@ Recently, the global community has experienced numerous supply chain attacks tar
            |
      +-----+-----+
      |           |        Malicious plug-ins;
-     |  Commit   |        Malcious commit
+     |  Commit   |        Malicious commit
      |           |
      +-----+-----+
            |
@@ -256,7 +256,7 @@ There is no standardized way to:
 
 An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
-Compliance and requirement checking includes audits of the results of organisational procedures and technical procedures, which can originate from checks conducted by the organization itself or checks conducted by trusted third parties.
+Compliance and requirement checking includes audits of the results of organizational procedures and technical procedures, which can originate from checks conducted by the organization itself or checks conducted by trusted third parties.
 Consecutively, consumers of statements about a released software can be auditors.
 Examples of procedure results important to audits include: available fresh and applicable code reviews, certification documents (e.g., FIPS or Common Criteria), virus scans, vulnerability disclosure reports (fixed or not fixed), security impact or applicability justification statements.
 Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
@@ -335,6 +335,28 @@ There is no standardized way to:
 * provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation
 * notify software integrators of vulnerabilities identified during security scans of running software
 * provide valid annotations on build integrity to ensure conformance
+
+## Identify Statements and Updates to Specific Versions of Released Software
+
+Software producers often have multiple and concurrent supported versions of a product.
+The versions may represent major feature or compatibility differentiating releases (1.0, 2.0), or implementations for different Operating System Platforms and Architectures (Linux, Mac, Windows, AMD, ARM, x86, x64).
+
+For each release, the software producer must be capable of providing statements, unique to that version.
+Producers may provide free patching to a specific version the consumer has purchased, while requiring upgrades to newer major releases.
+Consumers need to know which updates are compatible with their environment.
+Third parties that provide statements of quality need to know how to differentiate supported version bands, avoiding the recommendation to upgrade to an incompatible version.
+
+As versions age, and vulnerabilities are discovered, consumers need to know the newer version of a particular product.
+Software producers implement versioning updates, however there are no standards for consumers and third parties to apply across software producers.
+
+
+
+Consumers and Producers want:
+
+* a standard means to associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
+* a standard means to identify a patched version, specific to their Operating System and Platform
+* a standard means to differentiate major and minor version upgrades
+* a standard means to provide concurrent versioned updates
 
 --- back
 
