@@ -343,6 +343,28 @@ There is no standardized way to:
 * notify software integrators of vulnerabilities identified during security scans of running software
 * provide valid annotations on build integrity to ensure conformance
 
+## Identify Statements and Updates to Specific Versions of Released Software
+
+Software producers often have multiple and concurrent supported versions of a product.
+The versions may represent major feature or compatibility differentiating releases (1.0, 2.0), or implementations for different Operating System Platforms and Architectures (Linux, Mac, Windows, AMD, ARM, x86, x64).
+
+For each release, the software producer must be capable of providing statements, unique to that version.
+Producers may provide free patching to a specific version the consumer has purchased, while requiring upgrades to newer major releases.
+Consumers need to know which updates are compatible with their environment.
+Third parties that provide statements of quality need to know how to differentiate supported version bands, avoiding the recommendation to upgrade to an incompatible version.
+
+As versions age, and vulnerabilities are discovered, consumers need to know the newer version of a particular product.
+Software producers implement versioning updates, however there are no standards for consumers and third parties to apply across software producers.
+
+
+
+Consumers and Producers want:
+
+* a standard means to associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
+* a standard means to identify a patched version, specific to their Operating System and Platform
+* a standard means to differentiate major and minor version upgrades
+* a standard means to provide concurrent versioned updates
+
 --- back
 
 <!--
