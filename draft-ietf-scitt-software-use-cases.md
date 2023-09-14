@@ -356,14 +356,17 @@ Third parties that provide statements of quality need to know how to differentia
 As versions age, and vulnerabilities are discovered, consumers need to know the newer version of a particular product.
 Software producers implement versioning updates, however there are no standards for consumers and third parties to apply across software producers.
 
+Consumers of related software components want:
 
+* to discover information based on certain aspects of a software, such as version, platform architecture, or associated vulnerabilities
+* assess the applicability of patches or update when planning update campaigns
 
-Consumers and Producers want:
+There is no standardized way to:
 
-* a standard means to associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
-* a standard means to identify a patched version, specific to their Operating System and Platform
-* a standard means to differentiate major and minor version upgrades
-* a standard means to provide concurrent versioned updates
+* associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
+* identify a patched version, specific to their Operating System and Platform
+* differentiate major and minor version upgrades
+* to provide concurrent versioned updates
 
 --- back
 
