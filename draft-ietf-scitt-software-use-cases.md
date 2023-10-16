@@ -72,7 +72,7 @@ Supply chain security has historically focused on risk management practices to s
 While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined.
 Recently, the global community has experienced numerous supply chain attacks targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
-~~~~
+~~~~aasvg
       Dependencies        Malicious 3rd-party package or version
            |
            |
@@ -129,7 +129,7 @@ Examples of statements may include commit signatures, build environment and para
 In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility.
 The following use case illustrates the scope of SCITT and elaborates on the generic problem statement above.
 
-# Software Supply Chain Use Cases
+## Software Supply Chain Use Cases
 
 ## Verification That Signing Certificate Is Authorized by Supplier
 
@@ -141,11 +141,11 @@ The consumer, believing the software originated from the reputable organization,
 
 A consumer of software wants:
 
-* to verify the authenticity and integrity of software they use before installation.
+- to verify the authenticity and integrity of software they use before installation.
 
 There is no standardized way to:
 
-* enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the supplier, and is still valid.
+- enable the consumer to verify that software originated from a 'duly authorized signing party' on behalf of the supplier, and is still valid.
 
 ## Multi Stakeholder Evaluation of a Released Software Product
 
@@ -159,15 +159,15 @@ Discovery of all sources of such reports and/or identities of the authoritative 
 
 A consumer of released software product wants:
 
-* to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
-* to offload the burden to filter from and select all statements that are applicable to a particular version of a multi release software product, to an entity who does this on their behalf
-* to make an informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
+- to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
+- to offload the burden to filter from and select all statements that are applicable to a particular version of a multi release software product, to an entity who does this on their behalf
+- to make an informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
 
 There is no standardized way to:
 
-* aggregate large numbers of related statements in one place and discover them
-* referencing other statements via a statement
-* identifying or discover all (or at least a critical mass) of relevant authoritative entities
+- aggregate large numbers of related statements in one place and discover them
+- referencing other statements via a statement
+- identifying or discover all (or at least a critical mass) of relevant authoritative entities
 
 ## Security Analysis of a Software Product
 
@@ -189,17 +189,17 @@ For this release, both the software product and the affected software component 
 
 A consumer of a released software wants:
 
-* to know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion
-* how to attribute them to an authoritative issuer
-* how to associate the statements in a meaningful manner via a set of well-known semantic relationships
-* how to consistently, efficiently, and homogeneously check their authenticity
+- to know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion
+- how to attribute them to an authoritative issuer
+- how to associate the statements in a meaningful manner via a set of well-known semantic relationships
+- how to consistently, efficiently, and homogeneously check their authenticity
 
 There is no standardized way to:
 
-* know the various sources of statements
-* how to express the provenance and historicity of statements
-* how to related/link various heterogeneous statements in a simple fashion
-* check that the statement comes from a source with authority to issue that statement
+- know the various sources of statements
+- how to express the provenance and historicity of statements
+- how to related/link various heterogeneous statements in a simple fashion
+- check that the statement comes from a source with authority to issue that statement
 
 ## Promotion of a Software Component by Multiple Entities
 
@@ -215,17 +215,17 @@ Due to complex distribution and promotion lifecycle scenarios, the original soft
 
 A consumer of a released software wants:
 
-* to understand if a particular provider is actually the original provider or a promoter
-* to know if and how the source, or resulting binary, of a promoted software component differs from the original software component
-* to check the provenance and history of a software component's source back to its origin
-* to assess whether to trust a promoter or not
+- to understand if a particular provider is actually the original provider or a promoter
+- to know if and how the source, or resulting binary, of a promoted software component differs from the original software component
+- to check the provenance and history of a software component's source back to its origin
+- to assess whether to trust a promoter or not
 
 There is no standardized way to:
 
-* to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
-* track the provenance path from an original producer to a particular provider
-* to check for the trustworthiness of a provider
-* to check the integrity of modifications or transformations done by a provider
+- to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
+- track the provenance path from an original producer to a particular provider
+- to check for the trustworthiness of a provider
+- to check the integrity of modifications or transformations done by a provider
 
 ## Post-Boot Firmware Provenance
 
@@ -242,15 +242,15 @@ A verifying system appraising the integrity of a boot sequence must identify, lo
 
 A consumer of published software wants:
 
-* to easily identify sources for RIMs
-* to select appropriate RIMs and download them for the appraisal of measurements
-* to be able to assure the authenticity, applicability, and freshness of RIMs over time
+- to easily identify sources for RIMs
+- to select appropriate RIMs and download them for the appraisal of measurements
+- to be able to assure the authenticity, applicability, and freshness of RIMs over time
 
 There is no standardized way to:
 
-* identify, locate, retrieve and authenticate RIMs in a uniform fashion
-* to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
-* to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion
+- identify, locate, retrieve and authenticate RIMs in a uniform fashion
+- to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
+- to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion
 
 ## Auditing of Software Product
 
@@ -260,27 +260,27 @@ Compliance and requirement checking includes audits of the results of organizati
 Consequently, consumers of statements about released software can be auditors.
 Examples of procedure results important to audits include:
 
-* available fresh and applicable code reviews
-* certification documents (e.g., FIPS or Common Criteria)
-* virus scans
-* vulnerability disclosure reports (fixed or not fixed)
-* security impact or applicability justification statements
+- available fresh and applicable code reviews
+- certification documents (e.g., FIPS or Common Criteria)
+- virus scans
+- vulnerability disclosure reports (fixed or not fixed)
+- security impact or applicability justification statements
 
 Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
 
 A consumer of a released software wants:
 
-* to provide methods with different levels of complexity to auditors of a released software
-* expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available
-* the cost of audits to be manageable and scale well
-* complete visibility and accessibility to documents required for audits
+- to provide methods with different levels of complexity to auditors of a released software
+- expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available
+- the cost of audits to be manageable and scale well
+- complete visibility and accessibility to documents required for audits
 
 There is no standardized way to:
 
-* discover and associate relevant documents and check results required for various types of audits
-* assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion
-* check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
-* allow for more than one level of complexity of audit procedures (potentially depending on criticality)
+- discover and associate relevant documents and check results required for various types of audits
+- assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion
+- check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
+- allow for more than one level of complexity of audit procedures (potentially depending on criticality)
 
 ## Authentic Software Components in Air-Gapped Infrastructure
 
@@ -291,38 +291,39 @@ If the off-line systems in operation are part of constrained node environments, 
 
 A consumer of a released software wants:
 
-* a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
-* a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
-* a simple and low cost way to update the configuration of a system component in charge of validity or authenticity checking
+- a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
+- a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
+- a simple and low cost way to update the configuration of a system component in charge of validity or authenticity checking
 
 There is no standardized way to:
 
-* provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
-* enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
-* to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices
+- provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
+- enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
+- to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices
 
 ## Firmware Delivery to Large Set of Constrained Iot Devices
 
 Firmware is a critical component for successful execution of any constrained IoT device.
-It is often the bedrock on which the security story of the devices it powers. For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
+It is often the bedrock on which the security story of the devices it powers.
+For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
 These devices typically connect to the Internet through an intermediary base station using wireless technologies.
 Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor.
 The public network, open distribution system, and firmware update process create several security challenges.
 
 Consumers and other interested parties of a firmware update ecosystem wants:
 
-* to know that the received firmware for system update is not faulty or malicious
-* to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
-* to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
-* to confirm that the publishers know if their deliverable has been compromised. (For example, can they trust their key protection or audit logging?)
-* to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
+- to know that the received firmware for system update is not faulty or malicious
+- to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
+- to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
+- to confirm that the publishers know if their deliverable has been compromised. (For example, can they trust their key protection or audit logging?)
+- to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
 
 There is no standardized way to:
 
-* provide an update framework that allows validation of authenticity of firmware revisions
-* to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices
-* reliably discern an update that has been signed by the appropriate and intended signing identity
-* make an informed judgement on all available information about firmware at the install time. (For example, the firmware is still in a good state or otherwise?)
+- provide an update framework that allows validation of authenticity of firmware revisions
+- to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices
+- reliably discern an update that has been signed by the appropriate and intended signing identity
+- make an informed judgement on all available information about firmware at the install time. (For example, the firmware is still in a good state or otherwise?)
 
 ## Software Integrator Assembling a Software Product for a Smart Car
 
@@ -333,15 +334,15 @@ Integration complexity creates a higher risk of security vulnerabilities to the 
 
 Consumers of an integrated software wants:
 
-* all components presents in a software product listed, and the ability to identify and retrieve them from a secure and tamper-proof location
-* to receive an alert when a vulnerability scan detects a known security issue on a running software component
-* verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security
+- all components presents in a software product listed, and the ability to identify and retrieve them from a secure and tamper-proof location
+- to receive an alert when a vulnerability scan detects a known security issue on a running software component
+- verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security
 
 There is no standardized way to:
 
-* provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation
-* notify software integrators of vulnerabilities identified during security scans of running software
-* provide valid annotations on build integrity to ensure conformance
+- provide a tiered and transparent framework that allows for verification of integrity and authenticity of the integrated software at both component and product level before installation
+- notify software integrators of vulnerabilities identified during security scans of running software
+- provide valid annotations on build integrity to ensure conformance
 
 ## Identify Statements and Updates to Specific Versions of Released Software
 
@@ -358,15 +359,15 @@ Software producers implement versioning updates, however there are no standards 
 
 Consumers of related software components want:
 
-* to discover information based on certain aspects of a software, such as version, platform architecture, or associated vulnerabilities
-* assess the applicability of patches or update when planning update campaigns
+- to discover information based on certain aspects of a software, such as version, platform architecture, or associated vulnerabilities
+- assess the applicability of patches or update when planning update campaigns
 
 There is no standardized way to:
 
-* associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
-* identify a patched version, specific to their Operating System and Platform
-* differentiate major and minor version upgrades
-* to provide concurrent versioned updates
+- associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
+- identify a patched version, specific to their Operating System and Platform
+- differentiate major and minor version upgrades
+- to provide concurrent versioned updates
 
 --- back
 
