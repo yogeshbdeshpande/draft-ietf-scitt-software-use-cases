@@ -118,7 +118,6 @@ Recently, the global community has experienced numerous supply chain attacks tar
      |           |
      +-----------+
 ~~~~
-
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
 DevSecOps often depends on third-party and open-source solutions.
@@ -130,7 +129,7 @@ Examples of statements may include commit signatures, build environment and para
 In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility.
 The following use case illustrates the scope of SCITT and elaborates on the generic problem statement above.
 
-# Software Supply Chain Use Cases
+## Software Supply Chain Use Cases
 
 ## Verification That Signing Certificate Is Authorized by Supplier
 
