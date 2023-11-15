@@ -302,30 +302,32 @@ There is no standardized way to:
 
 ## Firmware Delivery to Large Set of Devices
 
-Firmware is a critical component for successful execution of any device, constrained IoT device or general purpose computer.
-It is often the bedrock on which the security story of the devices it powers.
+Firmware is a critical component of constrained IoT devices and general purpose computers.
+Firmware is often the bedrock on which the security story of a devices is built.
 For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
 These devices typically connect to the Internet through an intermediary base station using wireless technologies.
-Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor.
-During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices. Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important. After initialization, even if not constrained similarly to IoT devices, the computer's operating system can facilitate telemetry about telemetry settings and measure differences at scale.
+Through this connection, the telemetry data and analytics are transfered, and the device receives firmware updates published by vendors.
+During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices. 
+Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important. 
+After initialization, even if not constrained similarly to IoT devices, the computer's operating system can facilitate telemetry about telemetry settings and measure differences at scale.
 The public network, open distribution system, and firmware update process create several security challenges.
 
-Consumers and other interested parties of a firmware update ecosystem wants:
+Consumers and other interested parties of a firmware update ecosystem want to:
 
-- to know that the received firmware for system update is not faulty or malicious
-- to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
-- to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
-- to confirm that the publishers know if their deliverable has been compromised. (For example, can they trust their key protection or audit logging?)
-- to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
-- to know the firwmare has effectively maintained or changed applicable hardware settings once firmware is applied
+- know that the received firmware for system update is not faulty or malicious
+- know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
+- ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
+- confirm that the publishers knows if their deliverable has been compromised. For example, can they trust their key protection or audit logging?
+- know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
+- know if the firwmare has effectively maintained or changed applicable hardware settings after installation
 
 There is no standardized way to:
 
-- provide an update framework that allows validation of authenticity of firmware revisions
+- provide an update framework that allows validation of authenticity of firmware revisions (except for TUF and SUIT, fixme)
 - to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices
 - reliably discern an update that has been signed by the appropriate and intended signing identity
-- make an informed judgement on all available information about firmware at the install time. (For example, the firmware is still in a good state or otherwise?)
-- to implement an update framework with the ability to measure hardware configuration resulting from firmware upon completion on a large set of devices
+- make an informed judgement on all available information about firmware at the install time.
+- implement an update framework with the ability to measure hardware configuration 
 
 ## Software Integrator Assembling a Software Product for a Smart Car
 
