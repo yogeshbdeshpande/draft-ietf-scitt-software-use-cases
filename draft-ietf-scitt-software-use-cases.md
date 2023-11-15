@@ -59,7 +59,7 @@ Modern software applications are an intricate mix of first-party and third-party
 The software supply chain comprises all elements associated with a system's design, development, build, integration, deployment, and maintenance throughout its entire lifecycle.
 The complexity of software, coupled with a lack of lifecycle visibility, increases the risks associated with system attack surface and the number of cyber threats capable of harmful impacts, such as exfiltration of data, disruption of operations, and loss of reputation, intellectual property, and financial assets.
 There is a need for an architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
-Transparency-enabled products assist in managing compliance, assessing risks, and detecting supply chain attacks across the software lifecycle while prioritizing data privacy.
+SCITT-enabled products assist in managing compliance, assessing risks, and detecting supply chain attacks across the software lifecycle while prioritizing data privacy.
 
 ## Terminology {#terms}
 
