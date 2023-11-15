@@ -236,23 +236,23 @@ Corresponding procedures are often called authenticated, measured, or secure boo
 The output of these high assurance boot procedures is often used as input to more complex verifications known as remote attestation procedures.
 
 If measurements before execution are not possible, static after-the-fact analysis is required, typically by examining artifacts.
-When best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
+When best practices are followed, measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
 After finishing a boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.
 A verifying system appraising the integrity of a boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
 
-A consumer of published software wants:
+A consumer of published software wants to:
 
-- to easily identify sources for RIMs
-- to select appropriate RIMs and download them for the appraisal of measurements
-- to be able to assure the authenticity, applicability, and freshness of RIMs over time
+- easily identify sources for RIMs
+- select appropriate RIMs and download them for the appraisal of measurements
+- assure the authenticity, applicability, and freshness of RIMs over time
 
 There is no standardized way to:
 
 - identify, locate, retrieve and authenticate RIMs in a uniform fashion
-- to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
-- to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion
+- uniquely identify and filter multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
+- store RIMs in a fashion that enables their usage in appraisal procedures years after they were created
 
-## Auditing of Software Product
+## Auditing of Software Products
 
 An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
@@ -266,21 +266,20 @@ Examples of procedure results important to audits include:
 - vulnerability disclosure reports (fixed or not fixed)
 - security impact or applicability justification statements
 
-Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
+Relevant documents originate from various sources and include a wide range of representations and formats.
 
-A consumer of a released software wants:
+A producer of released software wants to:
 
-- to provide methods with different levels of complexity to auditors of a released software
-- expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available
-- the cost of audits to be manageable and scale well
-- complete visibility and accessibility to documents required for audits
+- match disclosures related to released software to the needs of an auditor
+- provide documents that enable efficient audit procedures
+- minimize the cost of audits
 
 There is no standardized way to:
 
-- discover and associate relevant documents, data, and check results required for various types of audits
+- discover and associate relevant documents, data, and validation results required for various types of audits
 - assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion
 - check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
-- allow for more than one level of complexity of audit procedures (potentially depending on criticality)
+- allow for more than one level of disclosure of audit procedures (potentially depending on criticality)
 
 ## Authentic Software Components in Air-Gapped Infrastructure
 
