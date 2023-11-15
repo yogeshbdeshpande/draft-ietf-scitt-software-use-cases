@@ -286,9 +286,9 @@ There is no standardized way to:
 Some software is deployed on systems not connected to the Internet.
 Authenticity checks for off-line systems can occur at time of deployment of released software.
 Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
-If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.
+If the off-line systems in operation are part of constrained node environments, they might not possess the capabilities to process and evaluate all the authenticity proofs that come with released software.
 
-A consumer of a released software wants:
+A consumer of released software wants:
 
 - a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
 - a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
@@ -297,8 +297,8 @@ A consumer of a released software wants:
 There is no standardized way to:
 
 - provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
-- enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
-- to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices
+- enable high performance, and constrained systems to conduct authenticity checks
+- verify the authenticity and integrity of software in a fashion that scales
 
 ## Firmware Delivery to Large Set of Devices
 
