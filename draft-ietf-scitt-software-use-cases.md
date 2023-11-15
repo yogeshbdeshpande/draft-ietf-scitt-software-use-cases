@@ -336,9 +336,10 @@ This typically involves getting various software components from multiple suppli
 For example, car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources.
 Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
 
-Consumers of an integrated software wants:
+Consumers of integrated software want:
 
-- all components presents in a software product listed, and the ability to identify and retrieve them from a secure and tamper-proof location
+- all components presents in a software product listed
+- the ability to identify and retrieve all components from a secure and tamper-proof location
 - to receive an alert when a vulnerability scan detects a known security issue on a running software component
 - verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security
 
@@ -354,24 +355,24 @@ Software producers often have multiple and concurrent supported versions of a pr
 The versions may represent major feature or compatibility differentiating releases (1.0, 2.0), or implementations for different Operating System Platforms and their respective Instruction Set Architectures (AMD, ARM, x86, x64 for Linux, Mac, and Windows).
 
 For each release, the software producer must be capable of providing statements, unique to that version.
-Producers may provide patching to upgrade a specific version and not others given criteria based upon on different use cases.
+Producers may provide patches to upgrade specific versions and not others.
 Consumers need to know which updates are compatible with their environment.
 Third parties that provide statements of quality need to know how to differentiate supported version bands, avoiding the recommendation to upgrade to an incompatible version.
 
-As versions lose recency and freshness and vulnerabilities are discovered, consumers need to know the newer version of a particular product.
+As versions lose recency and freshness and vulnerabilities are discovered, consumers need to know the latest version of a particular product.
 Software producers implement versioned updates, however there are no standards for consumers and third parties to apply across software producers.
 
-Consumers of related software components want:
+Consumers of related software components want to:
 
-- to discover information based on certain aspects of a software, such as version, platform architecture, or associated vulnerabilities
-- assess the applicability of patches or update when planning update campaigns
+- discover information based on certain aspects of software, such as version, platform architecture, or associated vulnerabilities
+- assess the applicability of patches when planning update campaigns
 
 There is no standardized way to:
 
 - associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
 - identify a patched version, specific to their Operating System and Platform
 - differentiate major and minor version upgrades
-- to provide concurrent versioned updates
+- provide concurrent versioned updates
 
 --- back
 
