@@ -58,8 +58,8 @@ These use cases aim to identify software supply chain problems that the industry
 Modern software applications are an intricate mix of first-party and third-party code, development practices and tools, deployment methods and infrastructure, and interfaces and protocols.
 The software supply chain comprises all elements associated with a system's design, development, build, integration, deployment, and maintenance throughout its entire lifecycle.
 The complexity of software, coupled with a lack of lifecycle visibility, increases the risks associated with system attack surface and the number of cyber threats capable of harmful impacts, such as exfiltration of data, disruption of operations, and loss of reputation, intellectual property, and financial assets.
-There is a need for a platform architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
-SCITT-enabled products and analytics solutions will assist in managing compliance and assessing risk to help prevent and detect supply chain attacks across the entire software lifecycle while prioritizing data privacy.
+There is a need for an architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
+Transparency-enabled products assist in managing compliance, assessing risks, and detecting supply chain attacks across the software lifecycle while prioritizing data privacy.
 
 ## Terminology {#terms}
 
