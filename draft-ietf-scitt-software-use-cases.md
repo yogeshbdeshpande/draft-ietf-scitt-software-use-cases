@@ -127,7 +127,7 @@ Typically, the range of types of statements about digital products (and their de
 Taking the type and structure of all statements about digital and products into account might not be possible.
 Examples of statements may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs.
 In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility.
-The following use case illustrates the scope of SCITT and elaborates on the generic problem statement above.
+The following use cases illustrate the scope of SCITT and elaborate on the generic problem statement above.
 
 ## Software Supply Chain Use Cases
 
@@ -139,9 +139,9 @@ This can be misleading, however, as there is no guarantee that the certificate u
 For example, a malicious actor may obtain a signing certificate from a reputable organization and use that certificate to sign malicious software.
 The consumer, believing the software originated from the reputable organization, would then install malicious software.
 
-A consumer of software wants:
+A consumer of software wants to:
 
-- to verify the authenticity and integrity of software they use before installation.
+- verify the authenticity and integrity of software they use before installation.
 
 There is no standardized way to:
 
@@ -157,11 +157,11 @@ There are multiple such authoritative bodies that make such assessments.
 There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them.
 Discovery of all sources of such reports and/or identities of the authoritative bodies adds a significant cost to the end user or consumer of the product.
 
-A consumer of released software product wants:
+A consumer of released software product wants to:
 
-- to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
-- to offload the burden to filter from and select all statements that are applicable to a particular version of a multi release software product, to an entity who does this on their behalf
-- to make an informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
+- offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
+- offload the burden to filter from and select all statements that are applicable to a particular version of a multi release software product, to an entity who does this on their behalf
+- make an informed decisions on which authoritative entities to believe
 
 There is no standardized way to:
 
@@ -179,26 +179,26 @@ This gives enough confidence to both producers and consumers that the released s
 Subsequently, multiple security researchers often run sophisticated security analysis tools on the same product.
 The intention is to identify any security weaknesses or vulnerabilities in the package.
 
-Initially, a particular analysis can identify itself as a simple weakness in a software component.
-Over a period of time, a statement from another third-party illustrates that the weakness is exposed in the same software component in a way that it is an exploitable vulnerability.
-The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
+Initially, a particular analysis can identify a simple weakness in a software component.
+Over a period of time, a statement from a third-party illustrates that the weakness is exposed in a way that represents an exploitable vulnerability.
+The producer of the software product provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
 At first, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
 Later, a second update of the software product includes a security patch to the affected software component from the software producer.
 Finally, a third update includes a new release (updated version) of the formerly insecure software component.
 For this release, both the software product and the affected software component are deemed secure by the producer and consumers.
 
-A consumer of a released software wants:
+A consumer of a released software wants to:
 
-- to know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion
-- how to attribute them to an authoritative issuer
-- how to associate the statements in a meaningful manner via a set of well-known semantic relationships
-- how to consistently, efficiently, and homogeneously check their authenticity
+- know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion
+- attribute them to an authoritative issuer
+- associate the statements in a meaningful manner via a set of well-known semantic relationships
+- consistently, efficiently, and homogeneously check their authenticity
 
 There is no standardized way to:
 
 - know the various sources of statements
-- how to express the provenance and historicity of statements
-- how to related/link various heterogeneous statements in a simple fashion
+- express the provenance and historicity of statements
+- relate and link various heterogeneous statements in a simple fashion
 - check that the statement comes from a source with authority to issue that statement
 
 ## Promotion of a Software Component by Multiple Entities
@@ -213,19 +213,19 @@ Over time, some providers no longer offer the exact same software component sour
 Some sources do not provide the exact same software component, but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
 Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.
 
-A consumer of a released software wants:
+A consumer of a released software wants to:
 
-- to understand if a particular provider is actually the original provider or a promoter
-- to know if and how the source, or resulting binary, of a promoted software component differs from the original software component
-- to check the provenance and history of a software component's source back to its origin
-- to assess whether to trust a promoter or not
+- understand if a particular provider is actually the original provider or a promoter
+- know if and how the source, or resulting binary, of a promoted software component differs from the original software component
+- check the provenance and history of a software component's source back to its origin
+- assess whether to trust a promoter or not
 
 There is no standardized way to:
 
-- to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
+- reliably discern if a provider is the original producer or is a trustworthy promoter or is an illegitimate provider
 - track the provenance path from an original producer to a particular provider
-- to check for the trustworthiness of a provider
-- to check the integrity of modifications or transformations done by a provider
+- check the trustworthiness of a provider
+- check the integrity of modifications or transformations applied by a provider
 
 ## Post-Boot Firmware Provenance
 
