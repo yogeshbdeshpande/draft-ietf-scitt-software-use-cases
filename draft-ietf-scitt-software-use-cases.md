@@ -67,8 +67,8 @@ Transparency-enabled products assist in managing compliance, assessing risks, an
 
 # Generic Problem Statement
 
-Supply chain security is a paramount prerequisite to successfully protect consumers and minimize economic, public health, and safety impacts.
-Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory.
+Supply chain security is a prerequisite to protecting consumers and minimizing economic, public health, and safety threats.
+Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, forcast demand, and optimize inventory.
 While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined.
 Recently, the global community has experienced numerous supply chain attacks targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
