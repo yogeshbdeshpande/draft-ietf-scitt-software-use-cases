@@ -309,7 +309,7 @@ There is no standardized way to:
 ## Firmware Delivery to Large Set of Devices
 
 Firmware is a critical component of constrained IoT devices and general purpose computers.
-Firmware is often the bedrock on which the security story of a devices is built.
+Firmware is often the bedrock on which the security story of a device is built.
 For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
 These devices typically connect to the Internet through an intermediary base station using wireless technologies.
 Through this connection, the telemetry data and analytics are transfered, and the device receives firmware updates published by vendors.
