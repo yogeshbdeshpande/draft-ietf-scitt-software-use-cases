@@ -45,6 +45,12 @@ author:
 normative:
 
 informative:
+  RFC9019: SUIT-ARCH
+  RFC9124: SUIT-IM
+  TUF:
+    title: >
+      The Update Framework Overview
+    target: https://theupdateframework.io/overview/
 
 --- abstract
 
@@ -323,7 +329,7 @@ Consumers and other interested parties of a firmware update ecosystem want to:
 
 There is no standardized way to:
 
-- provide an update framework that allows validation of authenticity of firmware revisions (except for TUF and SUIT, fixme)
+- provide an update framework that allows validation of authenticity of firmware revisions (in addition to existing approaches, such as {{-SUIT-ARCH}}, {{-SUIT-IM}}, or {{TUF}})
 - to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices
 - reliably discern an update that has been signed by the appropriate and intended signing identity
 - make an informed judgement on all available information about firmware at the install time.
