@@ -313,8 +313,8 @@ Firmware is often the bedrock on which the security story of a devices is built.
 For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
 These devices typically connect to the Internet through an intermediary base station using wireless technologies.
 Through this connection, the telemetry data and analytics are transfered, and the device receives firmware updates published by vendors.
-During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices. 
-Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important. 
+During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices.
+Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important.
 After initialization, even if not constrained similarly to IoT devices, the computer's operating system can facilitate telemetry about telemetry settings and measure differences at scale.
 The public network, open distribution system, and firmware update process create several security challenges.
 
@@ -333,7 +333,7 @@ There is no standardized way to:
 - to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices
 - reliably discern an update that has been signed by the appropriate and intended signing identity
 - make an informed judgement on all available information about firmware at the install time.
-- implement an update framework with the ability to measure hardware configuration 
+- implement an update framework with the ability to measure hardware configuration
 
 ## Software Integrator Assembling a Software Product for a Smart Car
 
