@@ -256,7 +256,7 @@ There is no standardized way to:
 
 - identify, locate, retrieve and authenticate RIMs in a uniform fashion
 - uniquely identify and filter multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
-- store RIMs in a fashion that enables their usage in appraisal procedures years after they were created
+- store RIMs in a secure fashion that enables their usage in appraisal procedures years after they were created
 
 ## Auditing of Software Products
 
