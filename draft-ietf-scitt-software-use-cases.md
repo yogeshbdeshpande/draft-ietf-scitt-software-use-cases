@@ -292,7 +292,7 @@ There is no standardized way to:
 Some software is deployed on systems not connected to the Internet.
 Authenticity checks for off-line systems can occur at time of deployment of released software.
 Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
-If the off-line systems in operation are part of constrained node environments, they might not possess the capabilities to process and evaluate all the authenticity proofs that come with released software.
+If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all the authenticity proofs that come with the released software.
 
 A consumer of released software wants:
 
