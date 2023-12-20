@@ -45,11 +45,17 @@ author:
 normative:
 
 informative:
+  RFC9019: SUIT-ARCH
+  RFC9124: SUIT-IM
+  TUF:
+    title: >
+      The Update Framework Overview
+    target: https://theupdateframework.io/overview/
 
 --- abstract
 
-This document includes a collection of representative Software Supply Chain Use Case Descriptions.
-These use cases aim to identify software supply chain problems that the industry faces today and acts as a guideline for developing a comprehensive solution for these classes of scenarios.
+This document includes a collection of representative Software Supply Chain Use Cases.
+These use cases aim to identify software supply chain problems that the industry faces today and act as a guideline for developing a comprehensive security architecture  and solutions for these scenarios.
 
 --- middle
 
@@ -58,8 +64,8 @@ These use cases aim to identify software supply chain problems that the industry
 Modern software applications are an intricate mix of first-party and third-party code, development practices and tools, deployment methods and infrastructure, and interfaces and protocols.
 The software supply chain comprises all elements associated with a system's design, development, build, integration, deployment, and maintenance throughout its entire lifecycle.
 The complexity of software, coupled with a lack of lifecycle visibility, increases the risks associated with system attack surface and the number of cyber threats capable of harmful impacts, such as exfiltration of data, disruption of operations, and loss of reputation, intellectual property, and financial assets.
-There is a need for a platform architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
-SCITT-enabled products and analytics solutions will assist in managing compliance and assessing risk to help prevent and detect supply chain attacks across the entire software lifecycle while prioritizing data privacy.
+There is a need for an architecture that will allow consumers to know that suppliers maintained appropriate security practices without requiring access to proprietary intellectual property.
+SCITT-enabled products assist in managing compliance with often distinct, but overlapping and interconnected, legal, regulatory, and technical requirements, assessing risks, and detecting supply chain attacks across the software lifecycle while prioritizing data privacy.
 
 ## Terminology {#terms}
 
@@ -67,8 +73,8 @@ SCITT-enabled products and analytics solutions will assist in managing complianc
 
 # Generic Problem Statement
 
-Supply chain security is a paramount prerequisite to successfully protect consumers and minimize economic, public health, and safety impacts.
-Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, demand forecasts, and optimize inventory.
+Supply chain security is a prerequisite to protecting consumers and minimizing economic, public health, and safety threats.
+Supply chain security has historically focused on risk management practices to safeguard logistics, meet compliance regulations, forecast demand, and optimize inventory.
 While these elements are foundational to a healthy supply chain, an integrated cyber security-based perspective of the software supply chains remains broadly undefined.
 Recently, the global community has experienced numerous supply chain attacks targeting weaknesses in software supply chains. As illustrated in {{lifecycle-threats}}, a software supply chain attack may leverage one or more lifecycle stages and directly or indirectly target the component.
 
@@ -127,7 +133,7 @@ Typically, the range of types of statements about digital products (and their de
 Taking the type and structure of all statements about digital and products into account might not be possible.
 Examples of statements may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs.
 In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility.
-The following use case illustrates the scope of SCITT and elaborates on the generic problem statement above.
+The following use cases illustrate the scope of SCITT and elaborate on the generic problem statement above.
 
 ## Software Supply Chain Use Cases
 
@@ -139,9 +145,9 @@ This can be misleading, however, as there is no guarantee that the certificate u
 For example, a malicious actor may obtain a signing certificate from a reputable organization and use that certificate to sign malicious software.
 The consumer, believing the software originated from the reputable organization, would then install malicious software.
 
-A consumer of software wants:
+A consumer of software wants to:
 
-- to verify the authenticity and integrity of software they use before installation.
+- verify the authenticity and integrity of software they use before installation.
 
 There is no standardized way to:
 
@@ -157,11 +163,11 @@ There are multiple such authoritative bodies that make such assessments.
 There is no assurance that all the bodies may be aware of statements from other authoritative entities or actively acknowledge them.
 Discovery of all sources of such reports and/or identities of the authoritative bodies adds a significant cost to the end user or consumer of the product.
 
-A consumer of released software product wants:
+A consumer of released software product wants to:
 
-- to offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
-- to offload the burden to filter from and select all statements that are applicable to a particular version of a multi release software product, to an entity who does this on their behalf
-- to make an informed decisions on which authoritative entities to believe based on the best visibility of all authoritative entities possible
+- offload the burden of identifying all relevant authoritative entities to an entity who does it on their behalf
+- offload the burden to filter from and select all statements that are applicable to a particular version of a multi release software product, to an entity who does this on their behalf
+- make an informed decisions on which authoritative entities to believe
 
 There is no standardized way to:
 
@@ -179,26 +185,26 @@ This gives enough confidence to both producers and consumers that the released s
 Subsequently, multiple security researchers often run sophisticated security analysis tools on the same product.
 The intention is to identify any security weaknesses or vulnerabilities in the package.
 
-Initially, a particular analysis can identify itself as a simple weakness in a software component.
-Over a period of time, a statement from another third-party illustrates that the weakness is exposed in the same software component in a way that it is an exploitable vulnerability.
-The producer of the software product now provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
+Initially, a particular analysis can identify a simple weakness in a software component.
+Over a period of time, a statement from a third-party illustrates that the weakness is exposed in a way that represents an exploitable vulnerability.
+The producer of the software product provides a statement that confirms the linking of software component vulnerability with the software product and also issues an advisory statement on how to mitigate the vulnerability.
 At first, the producer provides an updated software product that still uses the vulnerable software component but shields the issue in a fashion that inhibits exploitation.
 Later, a second update of the software product includes a security patch to the affected software component from the software producer.
 Finally, a third update includes a new release (updated version) of the formerly insecure software component.
 For this release, both the software product and the affected software component are deemed secure by the producer and consumers.
 
-A consumer of a released software wants:
+A consumer of a released software wants to:
 
-- to know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion
-- how to attribute them to an authoritative issuer
-- how to associate the statements in a meaningful manner via a set of well-known semantic relationships
-- how to consistently, efficiently, and homogeneously check their authenticity
+- know where to get these security statements from producers and third-parties related to the software product in a timely and unambiguous fashion
+- attribute them to an authoritative issuer
+- associate the statements in a meaningful manner via a set of well-known semantic relationships
+- consistently, efficiently, and homogeneously check their authenticity
 
 There is no standardized way to:
 
 - know the various sources of statements
-- how to express the provenance and historicity of statements
-- how to related/link various heterogeneous statements in a simple fashion
+- express the provenance and historicity of statements
+- relate and link various heterogeneous statements in a simple fashion
 - check that the statement comes from a source with authority to issue that statement
 
 ## Promotion of a Software Component by Multiple Entities
@@ -213,19 +219,19 @@ Over time, some providers no longer offer the exact same software component sour
 Some sources do not provide the exact same software component, but include patches and fixes produced by third-parties, as these emerge faster than solutions from the original producer.
 Due to complex distribution and promotion lifecycle scenarios, the original software component takes myriad forms.
 
-A consumer of a released software wants:
+A consumer of a released software wants to:
 
-- to understand if a particular provider is actually the original provider or a promoter
-- to know if and how the source, or resulting binary, of a promoted software component differs from the original software component
-- to check the provenance and history of a software component's source back to its origin
-- to assess whether to trust a promoter or not
+- understand if a particular provider is actually the original provider or a promoter
+- know if and how the source, or resulting binary, of a promoted software component differs from the original software component
+- check the provenance and history of a software component's source back to its origin
+- assess whether to trust a promoter or not
 
 There is no standardized way to:
 
-- to reliably discern a provider that is the original producer from a provider that is a trustworthy promoter or from an illegitimate provider,
+- reliably discern if a provider is the original producer or is a trustworthy promoter or is an illegitimate provider
 - track the provenance path from an original producer to a particular provider
-- to check for the trustworthiness of a provider
-- to check the integrity of modifications or transformations done by a provider
+- check the trustworthiness of a provider
+- check the integrity of modifications or transformations applied by a provider
 
 ## Post-Boot Firmware Provenance
 
@@ -236,23 +242,23 @@ Corresponding procedures are often called authenticated, measured, or secure boo
 The output of these high assurance boot procedures is often used as input to more complex verifications known as remote attestation procedures.
 
 If measurements before execution are not possible, static after-the-fact analysis is required, typically by examining artifacts.
-When best practices are followed, in such cases measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
+When best practices are followed, measurements (e.g., a hash or digests) are stored in a protected or shielded environment (e.g., TEEs or TPMs).
 After finishing a boot sequence, these measurements about foundational firmware are retrieved after-the-fact from shielded locations and must be compared to reference values that are part of RIMs.
 A verifying system appraising the integrity of a boot sequence must identify, locate, retrieve, and authenticate corresponding RIMs.
 
-A consumer of published software wants:
+A consumer of published software wants to:
 
-- to easily identify sources for RIMs
-- to select appropriate RIMs and download them for the appraisal of measurements
-- to be able to assure the authenticity, applicability, and freshness of RIMs over time
+- easily identify sources for RIMs
+- select appropriate RIMs and download them for the appraisal of measurements
+- assure the authenticity, applicability, and freshness of RIMs over time
 
 There is no standardized way to:
 
 - identify, locate, retrieve and authenticate RIMs in a uniform fashion
-- to uniquely identify among multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
-- to store RIMs in a fashion that enables their usage in appraisal procedures years after they were created in a secure and believable fashion
+- uniquely identify and filter multiple potential available RIMs (e.g., by age, source, signing authority, etc.)
+- store RIMs in a secure fashion that enables their usage in appraisal procedures years after they were created
 
-## Auditing of Software Product
+## Auditing of Software Products
 
 An organization has established procurement requirements and compliance policies for software use.
 In order to allow the acquisition and deployment of software in certain security domains of the organization, a check of software quality and characteristics must succeed.
@@ -266,30 +272,29 @@ Examples of procedure results important to audits include:
 - vulnerability disclosure reports (fixed or not fixed)
 - security impact or applicability justification statements
 
-Relevant compliance, requirement, and check result documents originate from various sources and include a wide range of representations and formats.
+Relevant documents (such as compliance, requirements or procedure results) originate from various sources and include a wide range of representations and formats.
 
-A consumer of a released software wants:
+A producer of released software wants to:
 
-- to provide methods with different levels of complexity to auditors of a released software
-- expects the creator or distributor of released software to enable audit procedures and make corresponding documents visible and available
-- the cost of audits to be manageable and scale well
-- complete visibility and accessibility to documents required for audits
+- match disclosures related to released software to the needs of an auditor
+- provide documents that enable efficient audit procedures
+- minimize the cost of audits
 
 There is no standardized way to:
 
-- discover and associate relevant documents, data, and check results required for various types of audits
+- discover and associate relevant documents, data, and validation results required for various types of audits
 - assert the authenticity and provenance of documents relevant to audits in a deterministic and uniform fashion
 - check the validity of identity statements about relevant documents after the fact (when they were made) in a consistent, long-term fashion
-- allow for more than one level of complexity of audit procedures (potentially depending on criticality)
+- allow for more than one level of disclosure of audit procedures (potentially depending on criticality)
 
 ## Authentic Software Components in Air-Gapped Infrastructure
 
 Some software is deployed on systems not connected to the Internet.
 Authenticity checks for off-line systems can occur at time of deployment of released software.
 Off-line systems require appropriate configuration and maintenance to be able to conduct useful authenticity checks.
-If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all kinds of different authenticity proofs that come with a released software.
+If the off-line systems in operation are part of constrained node environments, they do not possess the capabilities to process and evaluate all the authenticity proofs that come with the released software.
 
-A consumer of a released software wants:
+A consumer of released software wants:
 
 - a proof of authenticity that can be checked by an off-line system for vast periods of time after system deployment
 - a proof of authenticity to be small and as uniform as possible to allow for application in constrained node environments
@@ -298,35 +303,37 @@ A consumer of a released software wants:
 There is no standardized way to:
 
 - provide an authenticity proof that can be checked by off-line systems in a simple and uniform fashion
-- enable rich systems, regular systems, and constrained systems to conduct authenticity checks via the same procedure / code base
-- to verify the authenticity and integrity of software in a fashion that scales from applications such as global open source repositories down to off-line constrained devices
+- enable high performance, and constrained systems to conduct authenticity checks
+- verify the authenticity and integrity of software in a fashion that scales
 
 ## Firmware Delivery to Large Set of Devices
 
-Firmware is a critical component for successful execution of any device, constrained IoT device or general purpose computer.
-It is often the bedrock on which the security story of the devices it powers.
+Firmware is a critical component of constrained IoT devices and general purpose computers.
+Firmware is often the bedrock on which the security story of a device is built.
 For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
 These devices typically connect to the Internet through an intermediary base station using wireless technologies.
-Through this connection, the telemetry data and analytics transfer, and devices receive firmware updates when published by the vendor.
-During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices. Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important. After initialization, even if not constrained similarly to IoT devices, the computer's operating system can facilitate telemetry about telemetry settings and measure differences at scale.
+Through this connection, the telemetry data and analytics are transfered, and the device receives firmware updates published by vendors.
+During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices.
+Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important.
+After initialization, even if not constrained similarly to IoT devices, the computer's operating system can facilitate telemetry about telemetry settings and measure differences at scale.
 The public network, open distribution system, and firmware update process create several security challenges.
 
-Consumers and other interested parties of a firmware update ecosystem wants:
+Consumers and other interested parties of a firmware update ecosystem want to:
 
-- to know that the received firmware for system update is not faulty or malicious
-- to know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
-- to ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
-- to confirm that the publishers know if their deliverable has been compromised. (For example, can they trust their key protection or audit logging?)
-- to know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
-- to know the firwmare has effectively maintained or changed applicable hardware settings once firmware is applied
+- know that the received firmware for system update is not faulty or malicious
+- know if the signing identity used to assert the authenticity of the firmware is somehow used to sign unintended updates
+- ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
+- confirm that the publishers knows if their deliverable has been compromised. For example, can they trust their key protection or audit logging?
+- know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
+- know if the firwmare has effectively maintained or changed applicable hardware settings after installation
 
 There is no standardized way to:
 
-- provide an update framework that allows validation of authenticity of firmware revisions
+- provide an update framework that allows validation of authenticity of firmware revisions (in addition to existing approaches, such as {{-SUIT-ARCH}}, {{-SUIT-IM}}, or {{TUF}})
 - to verify that the firmware update seen by a single device, is indeed the same as seen by all the devices
 - reliably discern an update that has been signed by the appropriate and intended signing identity
-- make an informed judgement on all available information about firmware at the install time. (For example, the firmware is still in a good state or otherwise?)
-- to implement an update framework with the ability to measure hardware configuration resulting from firmware upon completion on a large set of devices
+- make an informed judgement on all available information about firmware at the install time.
+- implement an update framework with the ability to measure hardware configuration
 
 ## Software Integrator Assembling a Software Product for a Smart Car
 
@@ -335,9 +342,10 @@ This typically involves getting various software components from multiple suppli
 For example, car manufacturers source integrated software for their autonomous vehicles from third parties that integrates software components from various sources.
 Integration complexity creates a higher risk of security vulnerabilities to the delivered software.
 
-Consumers of an integrated software wants:
+Consumers of integrated software want:
 
-- all components presents in a software product listed, and the ability to identify and retrieve them from a secure and tamper-proof location
+- all components presents in a software product listed
+- the ability to identify and retrieve all components from a secure and tamper-proof location
 - to receive an alert when a vulnerability scan detects a known security issue on a running software component
 - verifiable proofs on build process and build environment with all supplier tiers to ensure end to end build quality and security
 
@@ -353,24 +361,24 @@ Software producers often have multiple and concurrent supported versions of a pr
 The versions may represent major feature or compatibility differentiating releases (1.0, 2.0), or implementations for different Operating System Platforms and their respective Instruction Set Architectures (AMD, ARM, x86, x64 for Linux, Mac, and Windows).
 
 For each release, the software producer must be capable of providing statements, unique to that version.
-Producers may provide patching to upgrade a specific version and not others given criteria based upon on different use cases.
+Producers may provide patches to upgrade specific versions and not others.
 Consumers need to know which updates are compatible with their environment.
 Third parties that provide statements of quality need to know how to differentiate supported version bands, avoiding the recommendation to upgrade to an incompatible version.
 
-As versions lose recency and freshness and vulnerabilities are discovered, consumers need to know the newer version of a particular product.
+As versions lose recency and freshness and vulnerabilities are discovered, consumers need to know the latest version of a particular product.
 Software producers implement versioned updates, however there are no standards for consumers and third parties to apply across software producers.
 
-Consumers of related software components want:
+Consumers of related software components want to:
 
-- to discover information based on certain aspects of a software, such as version, platform architecture, or associated vulnerabilities
-- assess the applicability of patches or update when planning update campaigns
+- discover information based on certain aspects of software, such as version, platform architecture, or associated vulnerabilities
+- assess the applicability of patches when planning update campaigns
 
 There is no standardized way to:
 
 - associate vulnerability information, statements of quality, statements of support and end of life (EOL) with a specific version of a product
 - identify a patched version, specific to their Operating System and Platform
 - differentiate major and minor version upgrades
-- to provide concurrent versioned updates
+- provide concurrent versioned updates
 
 --- back
 
