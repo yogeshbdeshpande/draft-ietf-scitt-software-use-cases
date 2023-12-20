@@ -311,7 +311,7 @@ Firmware is a critical component of constrained IoT devices and general purpose 
 Firmware is often the bedrock on which the security story of a device is built.
 For example, personal health monitoring devices (eHealth devices) are generally battery driven and offer health telemetry monitoring, such as temperature, blood pressure, and pulse rate.
 These devices typically connect to the Internet through an intermediary base station using wireless technologies.
-Through this connection, the telemetry data and analytics are transfered, and the device receives firmware updates published by vendors.
+Through this connection, the telemetry data and analytics are transferred, and the device receives firmware updates published by vendors.
 During initialization, general purpose computers can also have resource constraints like that of constrained IoT devices.
 Verification of hardened configuration of the computer's chipset for ongoing telemetry is increasingly important.
 After initialization, even if not constrained similarly to IoT devices, the computer's operating system can facilitate telemetry about telemetry settings and measure differences at scale.
@@ -324,7 +324,7 @@ Consumers and other interested parties of a firmware update ecosystem want to:
 - ascertain that the released firmware is not subverted or compromised due to an insider risk - be it malicious or otherwise
 - confirm that the publishers knows if their deliverable has been compromised. For example, can they trust their key protection or audit logging?
 - know how the update client on an instance of a health monitoring system discerns a general update from one specially crafted for just a small subset of a fleet of devices
-- know if the firwmare has effectively maintained or changed applicable hardware settings after installation
+- know if the firmware has effectively maintained or changed applicable hardware settings after installation
 
 There is no standardized way to:
 
