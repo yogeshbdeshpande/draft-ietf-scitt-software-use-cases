@@ -272,7 +272,7 @@ Examples of procedure results important to audits include:
 - vulnerability disclosure reports (fixed or not fixed)
 - security impact or applicability justification statements
 
-Relevant documents originate from various sources and include a wide range of representations and formats.
+Relevant documents (such as compliance, requirements or procedure results) originate from various sources and include a wide range of representations and formats.
 
 A producer of released software wants to:
 
