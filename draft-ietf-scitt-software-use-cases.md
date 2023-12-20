@@ -48,7 +48,6 @@ informative:
   RFC9019: SUIT-ARCH
   RFC9124: SUIT-IM
   TUF: TUF
-    target: https://theupdateframework.io/overview/
 
 --- abstract
 
