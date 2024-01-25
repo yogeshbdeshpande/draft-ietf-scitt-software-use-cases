@@ -5,14 +5,14 @@
 Network Working Group                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Informational                              Y. Deshpande
-Expires: 5 July 2024                                                 ARM
+Expires: 28 July 2024                                                ARM
                                                                D. Brooks
                                                                      REA
                                                                R. Martin
                                                                    MITRE
                                                                B. Knight
                                                                Microsoft
-                                                          2 January 2024
+                                                         25 January 2024
 
 
           Detailed Software Supply Chain Uses Cases for SCITT
@@ -57,7 +57,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 July 2024.
+   This Internet-Draft will expire on 28 July 2024.
 
 Copyright Notice
 
