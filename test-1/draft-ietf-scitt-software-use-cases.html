@@ -1356,14 +1356,185 @@ As illustrated in <a href="#lifecycle-threats" class="auto internal xref">Figure
 <a href="#name-example-lifecycle-threats" class="selfRef">Example Lifecycle Threats</a>
         </figcaption></figure>
 </div>
-<p id="section-2-3">DevSecOps often depends on third-party and open-source software.
+<div id="section-2-3">
+        <div class="alignLeft art-svg artwork" id="section-2-3.1">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="720" width="608" viewBox="0 0 608 720" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px" stroke-linecap="round">
+            <path d="M 184,64 L 184,88" fill="none" stroke="black"></path>
+            <path d="M 184,128 L 184,144" fill="none" stroke="black"></path>
+            <path d="M 192,224 L 192,240" fill="none" stroke="black"></path>
+            <path d="M 208,304 L 208,384" fill="none" stroke="black"></path>
+            <path d="M 232,320 L 232,336" fill="none" stroke="black"></path>
+            <path d="M 232,480 L 232,496" fill="none" stroke="black"></path>
+            <path d="M 240,176 L 240,200" fill="none" stroke="black"></path>
+            <path d="M 240,256 L 240,272" fill="none" stroke="black"></path>
+            <path d="M 256,352 L 256,384" fill="none" stroke="black"></path>
+            <path d="M 288,224 L 288,240" fill="none" stroke="black"></path>
+            <path d="M 288,416 L 288,456" fill="none" stroke="black"></path>
+            <path d="M 288,512 L 288,664" fill="none" stroke="black"></path>
+            <path d="M 296,128 L 296,144" fill="none" stroke="black"></path>
+            <path d="M 320,304 L 320,352" fill="none" stroke="black"></path>
+            <path d="M 336,336 L 336,384" fill="none" stroke="black"></path>
+            <path d="M 344,480 L 344,496" fill="none" stroke="black"></path>
+            <path d="M 368,272 L 368,336" fill="none" stroke="black"></path>
+            <path d="M 368,560 L 368,584" fill="none" stroke="black"></path>
+            <path d="M 392,144 L 392,192" fill="none" stroke="black"></path>
+            <path d="M 392,336 L 392,400" fill="none" stroke="black"></path>
+            <path d="M 400,560 L 400,584" fill="none" stroke="black"></path>
+            <path d="M 456,192 L 456,272" fill="none" stroke="black"></path>
+            <path d="M 488,408 L 488,536" fill="none" stroke="black"></path>
+            <path d="M 488,552 L 488,560" fill="none" stroke="black"></path>
+            <path d="M 496,272 L 496,336" fill="none" stroke="black"></path>
+            <path d="M 512,128 L 512,144" fill="none" stroke="black"></path>
+            <path d="M 512,304 L 512,400" fill="none" stroke="black"></path>
+            <path d="M 520,576 L 520,664" fill="none" stroke="black"></path>
+            <path d="M 544,144 L 544,192" fill="none" stroke="black"></path>
+            <path d="M 600,176 L 600,544" fill="none" stroke="black"></path>
+            <path d="M 152,32 L 224,32" fill="none" stroke="black"></path>
+            <path d="M 152,64 L 224,64" fill="none" stroke="black"></path>
+            <path d="M 152,96 L 216,96" fill="none" stroke="black"></path>
+            <path d="M 256,96 L 328,96" fill="none" stroke="black"></path>
+            <path d="M 104,112 L 120,112" fill="none" stroke="black"></path>
+            <path d="M 352,112 L 496,112" fill="none" stroke="black"></path>
+            <path d="M 152,128 L 216,128" fill="none" stroke="black"></path>
+            <path d="M 256,128 L 328,128" fill="none" stroke="black"></path>
+            <path d="M 392,144 L 544,144" fill="none" stroke="black"></path>
+            <path d="M 200,160 L 224,160" fill="none" stroke="black"></path>
+            <path d="M 256,160 L 280,160" fill="none" stroke="black"></path>
+            <path d="M 544,176 L 600,176" fill="none" stroke="black"></path>
+            <path d="M 392,192 L 544,192" fill="none" stroke="black"></path>
+            <path d="M 208,208 L 272,208" fill="none" stroke="black"></path>
+            <path d="M 296,240 L 456,240" fill="none" stroke="black"></path>
+            <path d="M 208,256 L 272,256" fill="none" stroke="black"></path>
+            <path d="M 368,272 L 496,272" fill="none" stroke="black"></path>
+            <path d="M 256,288 L 360,288" fill="none" stroke="black"></path>
+            <path d="M 248,304 L 320,304" fill="none" stroke="black"></path>
+            <path d="M 496,304 L 512,304" fill="none" stroke="black"></path>
+            <path d="M 168,320 L 184,320" fill="none" stroke="black"></path>
+            <path d="M 328,320 L 368,320" fill="none" stroke="black"></path>
+            <path d="M 320,336 L 336,336" fill="none" stroke="black"></path>
+            <path d="M 368,336 L 496,336" fill="none" stroke="black"></path>
+            <path d="M 248,352 L 320,352" fill="none" stroke="black"></path>
+            <path d="M 344,368 L 392,368" fill="none" stroke="black"></path>
+            <path d="M 256,384 L 336,384" fill="none" stroke="black"></path>
+            <path d="M 224,400 L 272,400" fill="none" stroke="black"></path>
+            <path d="M 392,400 L 512,400" fill="none" stroke="black"></path>
+            <path d="M 248,464 L 328,464" fill="none" stroke="black"></path>
+            <path d="M 248,512 L 328,512" fill="none" stroke="black"></path>
+            <path d="M 304,544 L 352,544" fill="none" stroke="black"></path>
+            <path d="M 416,544 L 600,544" fill="none" stroke="black"></path>
+            <path d="M 504,576 L 520,576" fill="none" stroke="black"></path>
+            <path d="M 328,592 L 496,592" fill="none" stroke="black"></path>
+            <path d="M 168,608 L 184,608" fill="none" stroke="black"></path>
+            <path d="M 304,640 L 472,640" fill="none" stroke="black"></path>
+            <path d="M 224,672 L 376,672" fill="none" stroke="black"></path>
+            <path d="M 432,672 L 576,672" fill="none" stroke="black"></path>
+            <path d="M 168,688 L 184,688" fill="none" stroke="black"></path>
+            <path d="M 208,704 L 360,704" fill="none" stroke="black"></path>
+            <path d="M 416,704 L 560,704" fill="none" stroke="black"></path>
+            <path d="M 208,704 L 224,672" fill="none" stroke="black"></path>
+            <path d="M 304,640 L 328,592" fill="none" stroke="black"></path>
+            <path d="M 360,704 L 376,672" fill="none" stroke="black"></path>
+            <path d="M 416,704 L 432,672" fill="none" stroke="black"></path>
+            <path d="M 472,640 L 496,592" fill="none" stroke="black"></path>
+            <path d="M 560,704 L 576,672" fill="none" stroke="black"></path>
+            <path d="M 152,32 C 143.16936,32 136,39.16936 136,48" fill="none" stroke="black"></path>
+            <path d="M 224,32 C 232.83064,32 240,39.16936 240,48" fill="none" stroke="black"></path>
+            <path d="M 152,64 C 143.16936,64 136,56.83064 136,48" fill="none" stroke="black"></path>
+            <path d="M 224,64 C 232.83064,64 240,56.83064 240,48" fill="none" stroke="black"></path>
+            <path d="M 152,96 C 143.16936,96 136,103.16936 136,112" fill="none" stroke="black"></path>
+            <path d="M 216,96 C 224.83064,96 232,103.16936 232,112" fill="none" stroke="black"></path>
+            <path d="M 256,96 C 247.16936,96 240,103.16936 240,112" fill="none" stroke="black"></path>
+            <path d="M 328,96 C 336.83064,96 344,103.16936 344,112" fill="none" stroke="black"></path>
+            <path d="M 496,112 C 504.83064,112 512,119.16936 512,128" fill="none" stroke="black"></path>
+            <path d="M 152,128 C 143.16936,128 136,120.83064 136,112" fill="none" stroke="black"></path>
+            <path d="M 216,128 C 224.83064,128 232,120.83064 232,112" fill="none" stroke="black"></path>
+            <path d="M 256,128 C 247.16936,128 240,120.83064 240,112" fill="none" stroke="black"></path>
+            <path d="M 328,128 C 336.83064,128 344,120.83064 344,112" fill="none" stroke="black"></path>
+            <path d="M 200,160 C 191.16936,160 184,152.83064 184,144" fill="none" stroke="black"></path>
+            <path d="M 224,160 C 232.83064,160 240,167.16936 240,176" fill="none" stroke="black"></path>
+            <path d="M 256,160 C 247.16936,160 240,167.16936 240,176" fill="none" stroke="black"></path>
+            <path d="M 280,160 C 288.83064,160 296,152.83064 296,144" fill="none" stroke="black"></path>
+            <path d="M 208,208 C 199.16936,208 192,215.16936 192,224" fill="none" stroke="black"></path>
+            <path d="M 272,208 C 280.83064,208 288,215.16936 288,224" fill="none" stroke="black"></path>
+            <path d="M 208,256 C 199.16936,256 192,248.83064 192,240" fill="none" stroke="black"></path>
+            <path d="M 272,256 C 280.83064,256 288,248.83064 288,240" fill="none" stroke="black"></path>
+            <path d="M 224,288 C 215.16936,288 208,295.16936 208,304" fill="none" stroke="black"></path>
+            <path d="M 224,288 C 232.83064,288 240,280.83064 240,272" fill="none" stroke="black"></path>
+            <path d="M 256,288 C 247.16936,288 240,280.83064 240,272" fill="none" stroke="black"></path>
+            <path d="M 248,304 C 239.16936,304 232,311.16936 232,320" fill="none" stroke="black"></path>
+            <path d="M 248,352 C 239.16936,352 232,344.83064 232,336" fill="none" stroke="black"></path>
+            <path d="M 224,400 C 215.16936,400 208,392.83064 208,384" fill="none" stroke="black"></path>
+            <path d="M 272,400 C 280.83064,400 288,407.16936 288,416" fill="none" stroke="black"></path>
+            <path d="M 304,400 C 295.16936,400 288,407.16936 288,416" fill="none" stroke="black"></path>
+            <path d="M 304,400 C 312.83064,400 320,392.83064 320,384" fill="none" stroke="black"></path>
+            <path d="M 248,464 C 239.16936,464 232,471.16936 232,480" fill="none" stroke="black"></path>
+            <path d="M 328,464 C 336.83064,464 344,471.16936 344,480" fill="none" stroke="black"></path>
+            <path d="M 248,512 C 239.16936,512 232,504.83064 232,496" fill="none" stroke="black"></path>
+            <path d="M 328,512 C 336.83064,512 344,504.83064 344,496" fill="none" stroke="black"></path>
+            <path d="M 304,544 C 295.16936,544 288,536.83064 288,528" fill="none" stroke="black"></path>
+            <path d="M 352,544 C 360.83064,544 368,551.16936 368,560" fill="none" stroke="black"></path>
+            <path d="M 416,544 C 407.16936,544 400,551.16936 400,560" fill="none" stroke="black"></path>
+            <path d="M 504,576 C 495.16936,576 488,568.83064 488,560" fill="none" stroke="black"></path>
+            <polygon class="arrowhead" points="528,664 516,658.4 516,669.6" fill="black" transform="rotate(90,520,664)"></polygon>
+            <path class="jump" d="M 488,552 C 494,552 494,536 488,536" fill="none" stroke="black"></path>
+            <polygon class="arrowhead" points="408,584 396,578.4 396,589.6" fill="black" transform="rotate(90,400,584)"></polygon>
+            <polygon class="arrowhead" points="376,584 364,578.4 364,589.6" fill="black" transform="rotate(90,368,584)"></polygon>
+            <polygon class="arrowhead" points="368,288 356,282.4 356,293.6" fill="black" transform="rotate(0,360,288)"></polygon>
+            <polygon class="arrowhead" points="360,112 348,106.4 348,117.6" fill="black" transform="rotate(180,352,112)"></polygon>
+            <polygon class="arrowhead" points="352,368 340,362.4 340,373.6" fill="black" transform="rotate(180,344,368)"></polygon>
+            <polygon class="arrowhead" points="336,320 324,314.4 324,325.6" fill="black" transform="rotate(180,328,320)"></polygon>
+            <polygon class="arrowhead" points="304,240 292,234.4 292,245.6" fill="black" transform="rotate(180,296,240)"></polygon>
+            <polygon class="arrowhead" points="296,664 284,658.4 284,669.6" fill="black" transform="rotate(90,288,664)"></polygon>
+            <polygon class="arrowhead" points="296,456 284,450.4 284,461.6" fill="black" transform="rotate(90,288,456)"></polygon>
+            <polygon class="arrowhead" points="248,200 236,194.4 236,205.6" fill="black" transform="rotate(90,240,200)"></polygon>
+            <polygon class="arrowhead" points="192,688 180,682.4 180,693.6" fill="black" transform="rotate(0,184,688)"></polygon>
+            <polygon class="arrowhead" points="192,608 180,602.4 180,613.6" fill="black" transform="rotate(0,184,608)"></polygon>
+            <polygon class="arrowhead" points="192,320 180,314.4 180,325.6" fill="black" transform="rotate(0,184,320)"></polygon>
+            <polygon class="arrowhead" points="192,88 180,82.4 180,93.6" fill="black" transform="rotate(90,184,88)"></polygon>
+            <polygon class="arrowhead" points="128,112 116,106.4 116,117.6" fill="black" transform="rotate(0,120,112)"></polygon>
+            <g class="text">
+              <text x="188" y="52">Artifact</text>
+              <text x="400" y="100">Identifiers</text>
+              <text x="28" y="116">Issuer</text>
+              <text x="184" y="116">Statement</text>
+              <text x="292" y="116">Envelope</text>
+              <text x="436" y="164">Identity</text>
+              <text x="440" y="180">Documents</text>
+              <text x="236" y="228">Signed</text>
+              <text x="340" y="228">COSE</text>
+              <text x="392" y="228">Signing</text>
+              <text x="240" y="244">Statement</text>
+              <text x="428" y="292">Transparency</text>
+              <text x="52" y="324">Transparency</text>
+              <text x="272" y="324">Receipt</text>
+              <text x="416" y="324">Service</text>
+              <text x="72" y="340">Service</text>
+              <text x="452" y="356">Transparency</text>
+              <text x="296" y="372">Receipt</text>
+              <text x="432" y="388">Service</text>
+              <text x="288" y="484">Transparent</text>
+              <text x="288" y="500">Statement</text>
+              <text x="36" y="612">Verifier</text>
+              <text x="356" y="612">Verify</text>
+              <text x="432" y="612">Transparent</text>
+              <text x="400" y="628">Statement</text>
+              <text x="32" y="692">Auditor</text>
+              <text x="256" y="692">Collect</text>
+              <text x="324" y="692">Receipts</text>
+              <text x="476" y="692">Replay</text>
+              <text x="520" y="692">Log</text>
+            </g>
+          </svg><a href="#section-2-3.1" class="pilcrow">¶</a>
+</div>
+</div>
+<p id="section-2-4">DevSecOps often depends on third-party and open-source software.
 These dependencies can be quite complex throughout the supply chain and render the checking of lifecycle compliance difficult.
 There is a need for manageable auditability and accountability of digital products.
 Typically, the range of types of statements about digital products (and their dependencies) is vast, heterogeneous, and can differ between community policy requirements.
 Taking the type and structure of all statements about digital and products into account might not be possible.
 Examples of statements may include commit signatures, build environment and parameters, software bill of materials, static and dynamic application security testing results, fuzz testing results, release approvals, deployment records, vulnerability scan results, and patch logs.
 In consequence, instead of trying to understand and describe the detailed syntax and semantics of every type of statement about digital products, the SCITT architecture focuses on ensuring statement authenticity, visibility/transparency, and intends to provide scalable accessibility.
-The following use cases illustrate the scope of SCITT and elaborate on the generic problem statement above.<a href="#section-2-3" class="pilcrow">¶</a></p>
+The following use cases illustrate the scope of SCITT and elaborate on the generic problem statement above.<a href="#section-2-4" class="pilcrow">¶</a></p>
 <div id="software-supply-chain-use-cases">
 <section id="section-2.1">
         <h3 id="name-software-supply-chain-use-c">
