@@ -126,6 +126,52 @@ As illustrated in {{lifecycle-threats}}, a software supply chain attack may leve
 ~~~~
 {: #lifecycle-threats title="Example Lifecycle Threats"}
 
+~~~aasvg
+                 .----------.
+                |  Artifact  |
+                 '----+-----'
+                      v
+                 .----+----.  .----------.  Identifiers
+Issuer      --> | Statement ||  Envelope  +<------------------.
+                 '----+----'  '-----+----'                     |
+                      |             |           +--------------+---+
+                       '----. .----'            | Identity         |
+                             |                  | Documents        +------.
+                             v                  +-------+------+---+      |
+                        .----+----.                     |                 |
+                       |  Signed   |    COSE Signing    |                 |
+                       | Statement +<-------------------+                 |
+                        '----+----'                     |                 |
+                             |               +----------+----+            |
+                          .-' '------------->+ Transparency  |            |
+                         |   .---------.     |               +-.          |
+Transparency        -->  |  | Receipt  +<----+  Service      | |          |
+     Service             |  |          +-.   +--+---------+--' |          |
+                         |   '-+-------' |      | Transparency |          |
+                         |     | Receipt +<-----+              |          |
+                         |     '-------+-'      | Service      |          |
+                          +-------. .-'         '--------------'          |
+                                   |                        |             |
+                                   |                        |             |
+                                   v                        |             |
+                             .-----+-----.                  |             |
+                            | Transparent |                 |             |
+                            |  Statement  |                 |             |
+                             '-----+-----'                  |             |
+                                   |                        |             |
+                                   |'-------.     .---------)-------------'
+                                   |         |   |          |
+                                   |         v   v           '--.
+                                   |    .----+---+-----------.  |
+Verifier            -->            |   / Verify Transparent /   |
+                                   |  /      Statement     /    |
+                                   | '--------------------'     |
+                                   v                            v
+                           .--------+---------.      .-----------+-----.
+Auditor             -->   / Collect Receipts /      /   Replay Log    /
+                         '------------------'      '-----------------'
+~~~
+
 DevSecOps often depends on third-party and open-source software.
 These dependencies can be quite complex throughout the supply chain and render the checking of lifecycle compliance difficult.
 There is a need for manageable auditability and accountability of digital products.
